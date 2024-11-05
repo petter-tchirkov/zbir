@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', 'nuxt-swiper'],
   css: ['assets/css/style.css'],
+  nitro: {
+    preset: 'netlify'
+  },
 
   tailwindcss: {
     config: {
