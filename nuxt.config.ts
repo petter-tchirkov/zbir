@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   ssr: false,
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-swiper'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-swiper', '@vueuse/nuxt',],
   css: ['assets/css/style.css'],
   nitro: {
     static: true

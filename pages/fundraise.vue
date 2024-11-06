@@ -21,9 +21,8 @@ const fundraises = ref([
 ]);
 </script>
 <template>
-  <div class="max-w-screen-xl m-auto">
+  <div class="max-w-screen-2xl m-auto pt-40">
     <Header />
-    <h1 class="text-5xl text-center mb-10">Активні збори</h1>
     <Fundraise
       v-for="f in fundraises"
       :title="f.title"

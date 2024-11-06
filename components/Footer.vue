@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-red mt-24 py-4 px-4 lg:px-0">
+  <footer class="bg-red py-4 px-4 lg:px-0">
     <div class="flex justify-between items-center max-w-screen-2xl m-auto">
       <img
         class="hidden lg:block h-12 lg:h-20"
