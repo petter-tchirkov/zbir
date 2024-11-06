@@ -4,7 +4,7 @@ const { text, link } = defineProps<{ text: string; link: string }>();
 <template>
   <NuxtLink
     :to="link"
-    class="bg-red rounded-full px-10 py-2 text-xl font-bold text-white"
+    class="border-4 border-red px-10 py-2 text-xl font-bold text-white hover:bg-red transition-all"
     >{{ text }}</NuxtLink
   >
 </template>

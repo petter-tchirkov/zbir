@@ -7,7 +7,7 @@ const { title, text, folder, link } = defineProps<{
 }>();
 </script>
 <template>
-  <div class="mb-20">
+  <div class="mb-20 px-4 lg:px-0">
     <h2 class="text-4xl font-bold text-center mb-4">
       {{ title }}
     </h2>
@@ -17,9 +17,14 @@ const { title, text, folder, link } = defineProps<{
     <Swiper
       class="mb-10"
       :modules="[SwiperAutoplay]"
-      :slides-per-view="2"
+      :slides-per-view="1"
       :loop="true"
       :effect="'creative'"
+      :breakpoints="{
+        768: {
+          slidesPerView: 2,
+        },
+      }"
       :autoplay="{
         delay: 5000,
         disableOnInteraction: true,

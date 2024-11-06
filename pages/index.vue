@@ -2,7 +2,7 @@
 <template>
   <main>
     <Header />
-    <article class="relative mb-40 max-w-screen-xl m-auto">
+    <article class="relative mb-40 max-w-screen-xl m-auto px-4 lg:px-0">
       <Swiper
         :modules="[SwiperAutoplay]"
         :slides-per-view="1"
@@ -23,9 +23,13 @@
           </div>
         </SwiperSlide>
       </Swiper>
-      <div class="absolute left-10 top-10 z-10">
-        <h2 class="text-5xl w-80 font-bold mb-10">Взвод БпАК 3МБ 155 ОМБр</h2>
-        <p class="text-xl max-w-screen-md">
+      <div class="lg:absolute left-10 top-10 z-10 pt-10 lg:pt-0">
+        <h2
+          class="text-5xl w-full lg:w-80 font-bold mb-10 text-center lg:text-left uppercase"
+        >
+          Взвод БпАК 3МБ 155 ОМБр імені Анни Київської
+        </h2>
+        <p class="text-2xl lg:text-xl text-center lg:text-left max-w-screen-md">
           Безпілотники стали важливим елементом сучасних військових операцій,
           забезпечуючи армії значну перевагу на полі бою. Вони використовуються
           для розвідки, спостереження, коригування артилерійського вогню та
@@ -35,17 +39,19 @@
         </p>
       </div>
     </article>
-    <article class="max-w-screen-xl m-auto">
+    <article class="max-w-screen-xl m-auto px-4 lg:px-0">
       <h2 class="text-center text-5xl font-bold mb-20">Діяльність</h2>
-      <div class="flex gap-10 flex-1 mb-20">
+      <div class="flex flex-col lg:flex-row gap-10 flex-1 mb-20">
         <img
           src="public/images/recon.jpg"
           class="rounded-3xl max-w-screen-md"
           alt=""
         />
         <div class="flex flex-col gap-4 justify-between">
-          <h3 class="text-4xl font-bold text-red">Розвідка</h3>
-          <p class="text-2xl">
+          <h3 class="text-4xl font-bold text-red text-center lg:text-left">
+            Розвідка
+          </h3>
+          <p class="text-2xl text-center lg:text-left">
             Розвідка за допомогою безпілотних літальних апаратів (БПЛА) має
             стратегічне значення, оскільки дозволяє отримувати точну інформацію
             в реальному часі без ризику для життя особового складу. Це дає змогу
@@ -53,17 +59,17 @@
             бою та знижувати витрати ресурсів, одночасно підвищуючи точність
             прийнятих рішень.
           </p>
-          <a href="/about" class="bg-red px-10 py-4 rounded-full text-2xl"
-            >Детальніше</a
-          >
+          <Button text="Детальніше" link="/about" />
         </div>
       </div>
-      <div class="flex gap-10 flex-1 mb-20">
+      <div class="flex gap-10 flex-1 mb-20 flex-col lg:flex-row">
         <div class="flex flex-col gap-4 justify-between">
-          <h3 class="text-4xl mb-4 font-bold text-right text-red">
+          <h3
+            class="text-4xl mb-4 font-bold text-center lg:text-right text-red"
+          >
             Коригування
           </h3>
-          <p class="text-2xl text-right">
+          <p class="text-2xl text-center lg:text-right">
             Коригування артилерійського вогню за допомогою БПЛА є важливим
             елементом сучасної бойової тактики, оскільки дозволяє в реальному
             часі коригувати вогонь, точно визначати позиції цілей і
@@ -71,11 +77,7 @@
             ефективність артилерії, зменшує витрати боєприпасів та мінімізує
             ризик випадкових втрат серед власних сил.
           </p>
-          <a
-            href="/about"
-            class="bg-red px-10 py-4 rounded-full text-2xl text-right"
-            >Детальніше</a
-          >
+          <Button text="Детальніше" link="/about" />
         </div>
         <img
           src="public/images/artillery.jpg"
@@ -83,24 +85,24 @@
           alt=""
         />
       </div>
-      <div class="flex gap-10 flex-1 mb-20">
+      <div class="flex gap-10 flex-1 mb-20 flex-col lg:flex-row">
         <img
           src="public/images/fpv.jpg"
           class="max-w-screen-md rounded-3xl"
           alt=""
         />
         <div class="flex flex-col gap-4 justify-between">
-          <h3 class="text-4xl mb-4 font-bold text-red">Ударні БпЛА</h3>
-          <p class="text-2xl">
+          <h3 class="text-4xl mb-4 font-bold text-red text-center lg:text-left">
+            Ударні БпЛА
+          </h3>
+          <p class="text-2xl text-center lg:text-left">
             Ударні БПЛА здатні здійснювати високоточні удари по важливих цілях з
             мінімальним ризиком для особового складу. Завдяки своїй маневреності
             та здатності діяти на великих відстанях, ці апарати можуть знищувати
             ворожі командні пункти, техніку, складські приміщення та навіть
             високопрофільні цілі, знижуючи потенціал супротивника.
           </p>
-          <a href="/about" class="bg-red px-10 py-4 rounded-full text-2xl"
-            >Детальніше</a
-          >
+          <Button text="Детальніше" link="/about" />
         </div>
       </div>
     </article>

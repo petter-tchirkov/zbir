@@ -14,7 +14,8 @@ export default defineNuxtConfig({
       theme: {
         extend: {
           colors: {
-            red: '#EC1923'
+            red: '#EC1923',
+            'dark-red': "#8b0000"
           }
         }
       }
