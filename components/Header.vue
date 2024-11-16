@@ -34,7 +34,12 @@ const isMobileMenuVisible = ref(false);
           />
         </button>
       </nav>
-      <Button link="/fundraise" text="Підтримати" class="hidden lg:block" />
+      <Button
+        link="https://send.monobank.ua/jar/3UwaxWXf8T"
+        :is-blank="true"
+        text="Підтримати"
+        class="hidden lg:block"
+      />
       <button @click="isMobileMenuVisible = true" class="lg:hidden">
         <img class="h-12" src="/icons/burger.svg" alt="" />
       </button>

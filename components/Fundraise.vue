@@ -54,6 +54,6 @@ const { title, text, folder, link } = defineProps<{
         />
       </SwiperSlide>
     </Swiper>
-    <Button :link="link" text="Детальніше" />
+    <Button :link="link" :is-blank="true" text="Детальніше" />
   </div>
 </template>
