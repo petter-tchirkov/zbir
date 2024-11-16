@@ -37,12 +37,22 @@ const isMobileMenuVisible = ref(false);
       <Button
         link="https://send.monobank.ua/jar/3UwaxWXf8T"
         :is-blank="true"
-        text="Підтримати"
+        :is-shiny="true"
+        text="Посилання на збір"
         class="hidden lg:block"
       />
       <button @click="isMobileMenuVisible = true" class="lg:hidden">
         <img class="h-12" src="/icons/burger.svg" alt="" />
       </button>
+    </div>
+    <div class="px-4 lg:hidden">
+      <Button
+        class="w-full block text-center"
+        :is-shiny="true"
+        :is-blank="true"
+        text="Посилання на збір"
+        link="https://send.monobank.ua/jar/3UwaxWXf8T"
+      />
     </div>
   </header>
 </template>
